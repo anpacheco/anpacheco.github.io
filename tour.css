@@ -1,0 +1,479 @@
+/* --------------------MAIN CSS-------------------- */
+
+body {
+    background: #000;
+    margin: 0;
+}
+
+content{
+    margin-left: 80px;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 20px;
+}
+
+a:hover { 
+    text-decoration: underline; 
+}
+
+.p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 10% [repeat 10];
+    grid-template-rows: 10% [repeat 10];
+    background-color: #000;
+    margin-right: 30px;
+}
+
+.box {
+    background-color: #000;
+    color: #fff;
+    padding: 0px 20px 20px 20px;
+
+}
+
+/* --------------------H STYLES-------------------- */
+
+h1 {
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 9vw;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    color: #FFF;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #FFF;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    margin-top: -12px;
+    color: #FFF;
+}
+
+h5 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* --------------------HEADER CSS-------------------- */
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "logo links";
+    margin-top: 20px;
+    margin-bottom: -50px;
+}
+
+.logo_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 0;
+    margin-top: 15px;
+    margin-left: 30px;
+    background: url(Content/FA_logo_nav.png) no-repeat;
+    width: 150px;
+    height: 40px;
+}
+
+.links {
+    grid-column: 3/10;
+    grid-row: 1/2;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.current_page{
+    background-color: #FFF;
+    color: #000;
+    padding: 5px 10px;
+    margin: 15px;
+}
+
+.current_page:hover{
+    text-decoration: none;
+}
+
+/* --------------------UPCOMING DATES-------------------- */
+
+#ud{
+    display: grid;
+    grid-template-columns: 475px 300px;
+    grid-template-rows: repeat(5, 75px);
+    grid-template-areas:
+        "title ."
+        "photo date"
+        "photo location"
+        "photo see_location"
+        "photo .";
+    padding-bottom: 50px;
+    border: solid; 
+    border-color: #FFF;
+    border-width: 0px 0px 1px 0px; 
+}
+
+#upcoming-dates{
+    grid-area: photo;
+    width: 475px;
+    height: 285px;
+    grid-column: 1/2;
+    grid-row: 2/5;
+    margin-top: 20px;
+}
+
+#ud h2 {
+    grid-area: title;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#ud h3 {
+    grid-area: date;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 30px;
+}
+
+#ud h4{
+    grid-area: location;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-left: 30px;
+    margin-top: -15px;
+}
+
+#ud h5{
+    grid-area: see_location;
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-top: 150px;
+    margin-left: 15px
+}
+
+/* --------------------PAST DATES GRID-------------------- */
+
+.past_dates{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 750px 510px 650px;
+    grid-template-areas:
+        "pd1"
+        "pd2"
+        "pd3";
+}
+
+.past_dates img{
+    padding-bottom: 40px;
+}
+
+/* --------------------1ST PAST DATE-------------------- */
+
+#pd1{
+    grid-area: pd1;
+    display: grid;
+    grid-template-columns: 475px 300px;
+    grid-template-rows: repeat(5, 75px);
+    grid-template-areas:
+        "title2 ."
+        "photo2 date2"
+        "photo2 location2"
+        "photo2 see_location2"
+        "photo2 .";
+    padding-bottom: 40px; 
+}
+
+#pd_photo1{
+    grid-area: photo2;
+    width: 475px;
+    height: 595px;
+    grid-column: 1/2;
+    grid-row: 2/5;
+    margin-top: 20px;
+}
+
+#pd1 h2 {
+    grid-area: title2;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#pd1 h3 {
+    grid-area: date2;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 30px;
+}
+
+#pd1 h4{
+    grid-area: location2;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-left: 30px;
+    margin-top: -15px;
+}
+
+#pd1 h5{
+    grid-area: see_location2;
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-top: 150px;
+    margin-left: 10px
+}
+
+/* --------------------2ND PAST DATE-------------------- */
+
+#pd2{
+    grid-area: pd2;
+    display: grid;
+    grid-template-columns: 475px 300px;
+    grid-template-rows: repeat(3, 150px);
+    grid-template-areas:
+        "photo3 pd2_1"
+        "photo3 pd2_2"
+        "photo3 pd2_3";
+    padding-bottom: 40px;
+}
+
+#pd2_1{
+    grid-area: pd2_1;
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-areas: 
+        "date3_1"
+        "location3_1"
+        "see_location3_1";
+}
+
+#pd_photo2{
+    grid-area: photo3;
+    width: 475px;
+    height: 475px;
+    grid-column: 1/2;
+    grid-row: 1/10;
+}
+
+#pd2_1 h3 {
+    grid-area: date3_1;
+    grid-row: 1/2;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#pd2_1 h4 {
+    grid-area: location3_1;
+    grid-row: 2/3;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
+#pd2_1 h5{
+    grid-area: see_location3_1;
+    grid-row: 3/4;
+    margin-left: 10px;
+    margin-top: -30px;
+}
+
+#pd2_2{
+    grid-area: pd2_2;
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-areas: 
+        "date3_2"
+        "location3_2"
+        "see_location3_2";
+}
+
+#pd2_2 h3 {
+    grid-area: date3_2;
+    grid-row: 1/2;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
+#pd2_2 h4 {
+    grid-area: location3_2;
+    grid-row: 2/3;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+#pd2_2 h5{
+    grid-area: see_location3_2;
+    grid-row: 3/4;
+    margin-left: 10px;
+    margin-top: -45px;
+}
+
+#pd2_3{
+    grid-area: pd2_3;
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-areas: 
+        "date3_3"
+        "location3_3"
+        "see_location3_3";
+}
+
+#pd2_3 h3 {
+    grid-area: date3_3;
+    grid-row: 1/2;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+#pd2_3 h4 {
+    grid-area: location3_3;
+    grid-row: 2/3;
+    margin-left: 30px;
+    margin-top: -30px;
+}
+
+#pd2_3 h5{
+    grid-area: see_location3_3;
+    grid-row: 3/4;
+    margin-left: 10px;
+    margin-top: -67px;
+}
+
+/* --------------------3RD PAST DATE-------------------- */
+
+#pd3{
+    grid-area: pd3;
+    display: grid;
+    grid-template-columns: 475px 300px;
+    grid-template-rows: repeat(5, 75px);
+    grid-template-areas:
+        "photo3 date3"
+        "photo3 location3"
+        "photo3 see_location3"
+        "photo3 ."
+        "photo3 .";
+    padding-bottom: 40px; 
+}
+
+#pd_photo3{
+    grid-area: photo3;
+    width: 475px;
+    height: 615px;
+    grid-column: 1/2;
+    grid-row: 1/5;
+}
+
+#pd3 h3 {
+    grid-area: date2;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-left: 30px;
+}
+
+#pd3 h4{
+    grid-area: location2;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 30px;
+    margin-top: -15px;
+}
+
+#pd3 h5{
+    grid-area: see_location2;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-left: 10px;
+    margin-top: -70px;
+}
+
+/* --------------------MORE DATES CSS-------------------- */
+
+.more_dates h2{
+    margin: 0px;
+}
+
+.more_dates a{
+    font-size: 25px;
+}
+
+/* --------------------FOOTER CSS-------------------- */
+
+.footer{
+    width: 100%;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "label . . . sm_links";
+    padding: 10px 0px 10px 85px;
+    margin-top: 10px;
+    border: solid;
+    border-color: #FFF;
+    border-width: 1px 0px 0px 0px;
+}
+
+#label{
+    grid-area: label;
+    grid-column: 1/2;
+}
+
+#sm_links{
+    grid-area: sm_links;
+    grid-column: 5/6;
+}
+
+.footer img{
+    margin: -10px;
+}
+
+.footer p{
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    float: left;
+}
