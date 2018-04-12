@@ -19,7 +19,7 @@ video {
 }
 h1 {
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'EB Garamond', serif;
     font-size: 9vw;
     text-align: center;
 }
@@ -31,7 +31,6 @@ main {
 
 .logo {
     margin-top: -300px;
-    margin-right: 125px;
 }
 
 ul {
@@ -41,14 +40,14 @@ ul {
 }
 
 .nav-bar {
-    font-family: 'Lato', sans-serif;
+    font-family: 'EB Garamond', serif;
     background: rgba(0,0,0,0);
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 250px;
     
 }
 
@@ -58,6 +57,7 @@ a {
     font-size: 25px;
     display: block;
     padding: 30px;
+    letter-spacing: 2px;
 }
 
 .nav-bar a:hover {
